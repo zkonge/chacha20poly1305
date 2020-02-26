@@ -82,7 +82,7 @@ class ChaCha:
     def word_to_bytes(state: Tuple[int]) -> bytes:
         """Convert state to little endian bytestream"""
 
-        return bytes(pack(f'<{len(state)}L', *state))
+        return pack(f'<{len(state)}L', *state)
 
     @staticmethod
     def bytes_to_words(data: bytes) -> Tuple[int]:
