@@ -4,7 +4,7 @@ from struct import pack
 from .chacha import ChaCha
 from .poly1305 import Poly1305
 
-__all__ = ('ChaCha20Poly1305','TagInvalidException')
+__all__ = ('ChaCha20Poly1305', 'TagInvalidException')
 
 
 class TagInvalidException(Exception):
